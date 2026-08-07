@@ -1,0 +1,21 @@
+{
+  "name": "Prolog Codespace",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "updateContentCommand": "sudo apt update && sudo apt install -y swi-prolog vim",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "workbench.colorTheme": "Dark Modern"
+      },
+      "extensions": [
+        "arthurwang.vsc-prolog"
+      ]
+    }
+  },
+  "remoteEnv": {
+    "GIT_EDITOR": "vim"
+  }
+}
